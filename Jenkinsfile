@@ -25,7 +25,7 @@ pipeline {
 
       stage('Server') {
         steps {
-          sh 'sleep 120'
+          sh 'sleep 30'
           sh 'hostname'
           sh 'pwd'
         }
