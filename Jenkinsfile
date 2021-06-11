@@ -5,7 +5,6 @@ pipeline {
 
   tools {
     nodejs 'node14'
-    docker 'docker'
   }
 
     stages {
@@ -25,6 +24,7 @@ pipeline {
       stage('Build') {
         steps {
           sh 'npm install'
+          sh 'docker ps'
         }
       }
 
