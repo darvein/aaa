@@ -18,8 +18,6 @@ pipeline {
   post {
     success {
       archiveArtifacts artifacts: 'output.txt'
-    }
-    always {
       cleanWs()
     }
   }
