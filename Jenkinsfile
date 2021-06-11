@@ -5,6 +5,7 @@ pipeline {
 
   tools {
     nodejs 'node14'
+    docker 'docker'
   }
 
     stages {
