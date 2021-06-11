@@ -8,6 +8,14 @@ pipeline {
     dockerTool 'docker'
   }
 
+  options {
+    throttleJobProperty(
+        categories: ['throttle'],
+        throttleEnabled: true,
+        throttleOption: 'category',
+    )
+  }
+
     stages {
       stage('Hello') {
         steps {
