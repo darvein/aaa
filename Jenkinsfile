@@ -17,6 +17,12 @@ pipeline {
         }
       }
 
+      stage('Build') {
+        steps {
+          sh 'npm install'
+        }
+      }
+
       stage('Bye'){
         environment {
           SECRET = credentials('secret-token')
