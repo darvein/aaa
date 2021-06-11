@@ -11,6 +11,7 @@ pipeline {
       stage('Bye'){
         steps {
           sh 'ping google.com -c 20 | tee -a output.txt'
+          sh 'printenv | tee -a output.txt'
         }
       }
     }
