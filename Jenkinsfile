@@ -3,6 +3,10 @@ pipeline {
     label 'slave'
   }
 
+  tools {
+    nodejs 'node14'
+  }
+
     stages {
       stage('Hello') {
         steps {
