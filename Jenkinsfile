@@ -1,7 +1,7 @@
 pipeline {
   agent {
-    label 'slave'
-  }
+        docker { image 'node:14-alpine' }
+    }
 
   tools {
     nodejs 'node14'
